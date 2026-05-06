@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ceyjbn5dwqu38"
+path="res://.godot/imported/fence-wood.obj-5c9525682e419e83c0a128fdc3eed2cc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence-wood.obj-5c9525682e419e83c0a128fdc3eed2cc.mesh"]
+
+source_file="res://Models/OBJ format/fence-wood.obj"
+dest_files=["res://.godot/imported/fence-wood.obj-5c9525682e419e83c0a128fdc3eed2cc.mesh", "res://.godot/imported/fence-wood.obj-5c9525682e419e83c0a128fdc3eed2cc.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cj06s105qtq6p"
+path="res://.godot/imported/structure-poles.obj-1e79ef45ca909264756124465b8ddb9e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/structure-poles.obj-1e79ef45ca909264756124465b8ddb9e.mesh"]
+
+source_file="res://Models/OBJ format/structure-poles.obj"
+dest_files=["res://.godot/imported/structure-poles.obj-1e79ef45ca909264756124465b8ddb9e.mesh", "res://.godot/imported/structure-poles.obj-1e79ef45ca909264756124465b8ddb9e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

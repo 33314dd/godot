@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://2e4e0vsvpt5f"]
+
+[ext_resource type="Script" uid="uid://divgk7p12woqg" path="res://player/pivote.gd" id="1_bib58"]
+[ext_resource type="PackedScene" uid="uid://dk4k0ym4a7dsv" path="res://Models/FBX format/SWORDfbx.fbx" id="1_y3vu3"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_bib58"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jxcr8"]
+
+[node name="player1" type="CharacterBody3D" unique_id=199029409]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=974379788]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_bib58")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2127782564]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_jxcr8")
+
+[node name="pivote" type="Node3D" parent="." unique_id=437352127]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+script = ExtResource("1_bib58")
+
+[node name="Camera3D" type="Camera3D" parent="pivote" unique_id=1614192719]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1, 1, -5)
+current = true
+
+[node name="weaponHolder" type="Node3D" parent="." unique_id=827379501]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.66157985, 0.8784281, 0)
+
+[node name="SWORDfbx" parent="weaponHolder" unique_id=1188464235 instance=ExtResource("1_y3vu3")]
+transform = Transform3D(0.006701093, 0, -0.047043122, -0.03183208, 0.0349874, -0.004534345, 0.034637753, 0.03215341, 0.004934001, -0.037854493, 0.34558237, -0.0011103451)
+
+[node name="AttackRayCast" type="RayCast3D" parent="." unique_id=323037457]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0065799, 0)
+target_position = Vector3(0, 0, 1.5)
